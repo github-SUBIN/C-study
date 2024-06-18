@@ -51,10 +51,10 @@ int main()
 	cout << endl;
 	cout << "****************************************" << endl;
 	bool yn = 1;
-	while (yn = 1)
+	while (yn == 1)
 	{
 		string searchName;
-		string searchTel;
+		string searchTel = "n";
 		char yynn;
 		cout << "전화번호를 검색합니다. 이름을 입력하세요. : ";
 		cin >> searchName;
@@ -65,7 +65,14 @@ int main()
 				searchTel = people[i].getTel();
 			}
 		}
-		cout << searchName << "의 전화번호는 " << searchTel << "입니다." << endl;
+		if (searchTel == "n")
+		{
+			cout << "잘못된 이름 입력입니다." << endl;
+		}
+		else
+		{
+			cout << searchName << "의 전화번호는 " << searchTel << "입니다." << endl;
+		}
 		cout << "계속하시겠습니까?(y/n) : ";
 		cin >> yynn;
 		if (yynn == 'y')
@@ -75,7 +82,8 @@ int main()
 		else if (yynn == 'n')
 		{
 			yn = 0;
-			return 0;
 		}
 	}
+
+	delete[] people;
 }
