@@ -1,0 +1,4 @@
+﻿practice_13-6.obj : error LNK2019: "public: void __cdecl MP3::play(void)" (?play@MP3@@QEAAXXZ)"public: void __cdecl SmartPhone::dial(void)" (?dial@SmartPhone@@QEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+practice_13-6.obj : error LNK2019: "public: bool __cdecl MobilePhone::sendCall(void)" (?sendCall@MobilePhone@@QEAA_NXZ)"public: void __cdecl SmartPhone::dial(void)" (?dial@SmartPhone@@QEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+practice_13-6.obj : error LNK2019: "public: bool __cdecl MobilePhone::sendSMS(void)" (?sendSMS@MobilePhone@@QEAA_NXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\C++_study\study_20240719\x64\Debug\study_20240719.exe : fatal error LNK1120: 3개의 확인할 수 없는 외부 참조입니다.
