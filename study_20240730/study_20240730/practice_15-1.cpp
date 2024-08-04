@@ -21,7 +21,7 @@ char Max(char i, char j)
 template <class T> 
 T Max(T i, T j)
 {
-	return i > j ? i : j;
+	return i > j ? i : j; //?:는 조건연산자 이다. (조건식)? 표현식1:표현식2 -> 조건식이 참일 경우엔 표현식1을 선택(수행), 거짓인 경우에는 표현식2를 선택(수행)
 }
 
 template <class T1, class T2> 
